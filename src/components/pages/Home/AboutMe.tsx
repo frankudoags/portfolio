@@ -35,6 +35,17 @@ const AboutMe = () => {
         },
         x: -700,
       });
+
+      const lines = gsap.utils.toArray("#header-text-2 .child");
+      gsap.set(lines, { autoAlpha: 1 });
+      gsap.from(lines, {
+        duration: 1.2,
+        opacity: 0,
+        yPercent: 100,
+        ease: "power4.out",
+        delay: 0.25,
+        stagger: 0.25,
+      });
     }
   }, []);
   return (
@@ -42,7 +53,6 @@ const AboutMe = () => {
       <div className="text-[1.5rem] md:text-[3rem] lg:text-[5rem] text-black flex flex-col-reverse lg:grid lg:grid-cols-[1fr,_2px,_0.5fr] gap-8 lg:gap-16 p-6 lg:p-16">
         <h2 className="leading-[100%] lg:font-semibold">
           Creating magic with code, one line at a time.
-          I like to build things that make people's lives easier.
         </h2>
 
         {/* Vertical separator */}
@@ -104,8 +114,11 @@ const AboutMe = () => {
         <div className="flex flex-col justify-between gap-16">
           <div className="grid lg:grid-cols-[1fr,_2px,_1fr] gap-16">
             <div>
-              <h2 className="text-[2rem] md:text-[2.75rem] font-semibold leading-[110%] tracking-[-1px] mb-2">
-                Frontend Engineering
+              <h2
+                id="#header-text-2"
+                className="text-[2rem] overflow-hidden md:text-[2.75rem] font-semibold leading-[110%] tracking-[-1px] mb-2"
+              >
+                <div className="child">Frontend Engineering</div>
               </h2>
               <p className="text-muted text-lg leading-[160%] font-medium">
                 I build responsive and accessible web applications with React,
@@ -117,8 +130,15 @@ const AboutMe = () => {
             {/* Horizontal separator */}
             <div className="lg:hidden block h-[2px] bg-black line horizontal" />
             <div>
-              <h2 className="text-[2rem] md:text-[2.75rem] font-semibold leading-[110%] tracking-[-1px] mb-2">
-                Backend Engineering
+              <h2
+                id="#header-text-2"
+                className="text-[2rem] overflow-hidden md:text-[2.75rem] font-semibold leading-[110%] tracking-[-1px] mb-2"
+              >
+                <div className="child">
+                  <span>
+                  Backend Engineering
+                  </span>
+                </div>
               </h2>
               <p className="text-muted text-lg leading-[160%] font-medium">
                 Building scalable and secure APIs with Node.js, Express, and
@@ -132,8 +152,11 @@ const AboutMe = () => {
 
           <div className="grid lg:grid-cols-[1fr,_2px,_1fr] gap-16">
             <div>
-              <h2 className="text-[2rem] md:text-[2.75rem] font-semibold leading-[110%] tracking-[-1px] mb-2">
-                Security Researcher
+              <h2
+                id="#header-text-2"
+                className="text-[2rem] overflow-hidden md:text-[2.75rem] font-semibold leading-[110%] tracking-[-1px] mb-2"
+              >
+                <div className="child">Security Research</div>
               </h2>
               <p className="text-muted text-lg leading-[160%] font-medium">
                 I spend my free time researching finding vulnerabilities in
@@ -144,7 +167,7 @@ const AboutMe = () => {
             {/* Horizontal separator */}
             <div className="lg:hidden block h-[2px] bg-black line horizontal" />
             <div>
-              <h2 className="text-[2rem] md:text-[2.75rem] font-semibold leading-[110%] tracking-[-1px] mb-2">
+              <h2 className="text-[2rem] overflow-hidden md:text-[2.75rem] font-semibold leading-[110%] tracking-[-1px] mb-2">
                 Tooling and Infrastructure
               </h2>
               <p className="text-muted text-lg leading-[160%] font-medium">
