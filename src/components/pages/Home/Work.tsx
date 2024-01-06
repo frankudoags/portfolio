@@ -2,12 +2,28 @@ import React from "react";
 import Image from "next/image";
 import { ParallaxImage } from "@/components";
 
+//daovation, afrihealth, 
+
 const works = [
   {
-    title: "5th Element",
-    description: "A 3D animated short film about the 5th element",
-    workType: "Animation",
-    image: "/images/matchbox-2.png",
+    title: "Matchbox",
+    description: "The Ultimate Match-Making Platform for Upward-Mobile Millennials",
+    workType: "Frontend",
+    image: "/projects/matchbox.jpeg",
+    year: "2023",
+  },
+    {
+    title: "ULES Awards",
+    description: "Award voting site for Faculty of Engineering, University of Lagos",
+    workType: "Frontend",
+    image: "/projects/ules-awards.png",
+    year: "2023",
+  },
+      {
+    title: "Harmony",
+    description: "A visualization tool for the harmony blockchain for tracking transactions",
+    workType: "Frontend",
+    image: "/projects/harmony.png",
     year: "2023",
   },
 ];
@@ -67,7 +83,7 @@ const WorkCard = ({
           </div>
         </div>
       </div>
-      <ParallaxImage priority src={image} alt="" />
+      <ParallaxImage priority src={image} alt={description} />
     </>
   );
 };

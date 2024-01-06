@@ -49,7 +49,7 @@ const AboutMe = () => {
     }
   }, []);
   return (
-    <div ref={containerRef} id="about" className="bg-off-white">
+    <div ref={containerRef} id="about" className="bg-off-white overflow-hidden">
       <div className="text-[1.5rem] md:text-[3rem] lg:text-[5rem] text-black flex flex-col-reverse lg:grid lg:grid-cols-[1fr,_2px,_0.5fr] gap-8 lg:gap-16 p-6 lg:p-16">
         <h2 className="leading-[100%] lg:font-semibold">
           Creating magic with code, one line at a time.
@@ -97,7 +97,7 @@ const AboutMe = () => {
       {/* Horizontal separator */}
       <div className="mx-8 lg:mx-16 h-[2px] bg-black line horizontal"></div>
 
-      <div className="grid lg:grid-cols-[0.5fr,_2px,_1fr] gap-16 p-8 lg:p-16">
+      <div className="lg:grid lg:grid-cols-[0.5fr,_2px,_1fr] gap-16 p-8 lg:p-16">
         <div className="flex items-start justify-between">
           <h3 className="text-[2rem] font-semibold">(What I do)</h3>
           <svg
@@ -109,7 +109,7 @@ const AboutMe = () => {
             <path d="M14.5895 16.0032L5.98291 7.39664L7.39712 5.98242L16.0037 14.589V7.00324H18.0037V18.0032H7.00373V16.0032H14.5895Z"></path>
           </svg>
         </div>
-        <div className="w-[2px] h-full bg-black line vertical" />
+        <div className="hidden lg:block w-[2px] h-full bg-black line vertical" />
 
         <div className="flex flex-col justify-between gap-16">
           <div className="grid lg:grid-cols-[1fr,_2px,_1fr] gap-16">
@@ -141,9 +141,7 @@ const AboutMe = () => {
                 </div>
               </h2>
               <p className="text-muted text-lg leading-[160%] font-medium">
-                Building scalable and secure APIs with Node.js, Express, and
-                MongoDB. Looking to expand my knowledge of other backend
-                languages and frameworks. Rust is next on my list.
+                Building scalable and secure APIs in Typescript and Rust
               </p>
             </div>
           </div>
@@ -159,7 +157,7 @@ const AboutMe = () => {
                 <div className="child">Security Research</div>
               </h2>
               <p className="text-muted text-lg leading-[160%] font-medium">
-                I spend my free time researching finding vulnerabilities in
+                I spend my free time researching & finding vulnerabilities in
                 solidity smart contracts and web applications.
               </p>
             </div>
@@ -171,9 +169,8 @@ const AboutMe = () => {
                 Tooling and Infrastructure
               </h2>
               <p className="text-muted text-lg leading-[160%] font-medium">
-                My end goal as an engineer is to build tools that make the
-                development process easier for other developers. Building tools
-                and important infrastructure is my passion.
+                As an engineer, I enjoy building tools and infrastructure that makes the
+                development process easier for other developers.
               </p>
             </div>
           </div>

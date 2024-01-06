@@ -5,3 +5,57 @@
 body {
   font-size: 16px;
 }
+
+.border-light {
+  border-color: #545557;
+}
+
+.rounded-div {
+  width: 150%;
+  content: "";
+  display: block;
+  position: absolute;
+  background: var(--color-white);
+  height: 750%;
+  left: 50%;
+  border-radius: 950%;
+  transform: translate(-50%, -86.666%);
+  z-index: 1;
+}
+
+.round-wrapper {
+  transform: translateY(-1px);
+  will-change: height;
+  overflow: hidden;
+  height: 80px;
+}
+.cta-btn {
+  @apply text-gray-200 w-full sm:w-fit py-4 px-8 border border-light rounded-lg text-center
+}
+
+
+.hexagon-shape {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  /* transform: rotate(-30deg) skewX(30deg) scaleY(.866); */
+}
+
+.hexagon-shape:before {
+  position: absolute;
+  right: 6.7%;
+  bottom: 0;
+  left: 6.7%;
+  top: 0;
+  transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
+  /* background: linear-gradient(59.82deg, #0976CE 0%, #0976CE 49.36%, #3A91D7 50.11%, #3A91D7 100%); */
+  content: '';
+}
+
+
+/* MANUAL MEDIA QUERIES */
+@media(max-width: 768px) {
+  .round-wrapper {
+    height: 50px;
+  }
+}

@@ -2,7 +2,7 @@
 import { ParallaxImage } from '@/components';
 import { AboutHome, NameSection, Work } from '@/components/pages/Home'
 import { useEffect } from 'react';
-import { split } from '@/components/common/Split';
+import { split } from "@/components/animations/text";
 
 
 export default function Home() {
@@ -12,9 +12,9 @@ export default function Home() {
   return (
     <main className="">
       <NameSection />
-      <ParallaxImage priority src="/images/man.webp" alt="" />
+      <ParallaxImage priority src="/images/frank-hero-1.JPG" alt="" />
       <AboutHome />
-      {/* <Work /> */}
+      <Work />
     </main>
   );
 }

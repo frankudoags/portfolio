@@ -38,15 +38,15 @@ const ParallaxImage = (props: ParallaxImageProps) => {
   return (
     <div
       ref={containerRef}
-      className="image_container lg:h-[90vh] overflow-clip relative"
+      className="image_container h-50vh lg:h-[90vh] overflow-hidden lg:overflow-clip relative"
     >
-      <div ref={ref} className="scale-[1.5]">
+      <div ref={ref} className="lg:scale-[1.25]">
         <Image
           {...props}
           alt={props.alt}
           width={1680}
           height={800}
-          className="object-[0px,-100px]"
+          // className="object-[0px,-50px]"
         />
         <div
           style={{ backgroundSize: "150px 150px" }}
