@@ -1,4 +1,5 @@
 "use client";
+
 import { ParallaxImage } from '@/components';
 import { AboutHome, NameSection, Work } from '@/components/pages/Home'
 import { useEffect } from 'react';

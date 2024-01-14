@@ -1,12 +1,14 @@
-import * as React from "react";
+"use client";
+
+import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const AboutMe = () => {
-  const containerRef = React.useRef<HTMLDivElement>(null);
-  React.useEffect(() => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
     if (containerRef.current) {
       gsap.from(containerRef.current?.querySelectorAll(".line.vertical"), {
         scrollTrigger: {

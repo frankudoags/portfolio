@@ -1,5 +1,5 @@
 import Splitting from "splitting";
-import { IO } from "./observe";
+import { IO } from "../animations/observe";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);

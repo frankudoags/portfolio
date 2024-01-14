@@ -1,4 +1,6 @@
-import * as React from "react";
+"use client";
+
+import { useRef, useEffect } from "react";
 import type { ImageProps } from "next/image";
 import Image from "next/image";
 import { gsap } from "gsap";
@@ -9,11 +11,11 @@ gsap.registerPlugin(ScrollTrigger);
 type ParallaxImageProps = {} & ImageProps;
 
 const ParallaxImage = (props: ParallaxImageProps) => {
-  const ref = React.useRef<HTMLDivElement>(null);
-  const containerRef = React.useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const tl = gsap.timeline();
 
-  React.useEffect(() => {
+  useEffect(() => {
     tl.to(ref.current, {
       scrollTrigger: {
         scrub: 1,
