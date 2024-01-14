@@ -5,8 +5,7 @@ import { useLayoutEffect, useRef } from "react";
 const NameSection = () => {
 
   const downloadResumeinAnotherTab = () => {
-    const about = document.getElementById("about");
-    about?.scrollIntoView({ behavior: "smooth" });
+
   };
 
   const containerRef = useRef<HTMLDivElement>(null);
@@ -45,15 +44,28 @@ const NameSection = () => {
         </h1>
       </div>
       <div className="font-semibold flex items-center justify-between text-[1.5rem] md:text-[2rem]">
-        <div
-          onClick={downloadResumeinAnotherTab}
-          className="hidden md:block cursor-pointer ml-auto"
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://docs.google.com/document/d/14jJ2ZUeM5IyS3Uk3VdPng-SATn3aAXWxRhmb-uEdzK8/edit"
+          className="hidden md:flex items-center gap-2 cursor-pointer ml-auto"
         >
           Resume
-        </div>
+          <ArrowUpRight />
+        </a>
       </div>
     </div>
   );
 };
 
 export default NameSection;
+
+
+const ArrowUpRight = () => (
+  <svg
+    
+    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-6 h-6">
+    <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+  </svg>
+
+)
