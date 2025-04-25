@@ -122,7 +122,7 @@ const AboutMe = () => {
               >
                 <div className="child">Frontend Engineering</div>
               </h2>
-              <p className="text-muted text-lg leading-[160%] font-medium">
+              <p className="text-[#1E1E21B3] text-lg leading-[160%] font-medium">
                 I build responsive and accessible web applications with React,
                 Next.js, and TailwindCSS.
               </p>
@@ -142,7 +142,7 @@ const AboutMe = () => {
                   </span>
                 </div>
               </h2>
-              <p className="text-muted text-lg leading-[160%] font-medium">
+              <p className="text-[#1E1E21B3] text-lg leading-[160%] font-medium">
                 Building scalable and secure APIs in Typescript and Rust
               </p>
             </div>
@@ -158,7 +158,7 @@ const AboutMe = () => {
               >
                 <div className="child">Security Research</div>
               </h2>
-              <p className="text-muted text-lg leading-[160%] font-medium">
+              <p className="text-[#1E1E21B3] text-lg leading-[160%] font-medium">
                 I spend my free time researching & finding vulnerabilities in
                 solidity smart contracts and web applications.
               </p>
@@ -170,7 +170,7 @@ const AboutMe = () => {
               <h2 className="text-[2rem] overflow-hidden md:text-[2.75rem] font-semibold leading-[110%] tracking-[-1px] mb-2">
                 Tooling and Infrastructure
               </h2>
-              <p className="text-muted text-lg leading-[160%] font-medium">
+              <p className="text-[#1E1E21B3] text-lg leading-[160%] font-medium">
                 As an engineer, I enjoy building tools and infrastructure that makes the
                 development process easier for other developers.
               </p>

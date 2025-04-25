@@ -1,14 +1,18 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useRef, useEffect } from "react";
-import type { ImageProps } from "next/image";
-import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-type ParallaxImageProps = {} & ImageProps;
+type ParallaxImageProps = {
+  src: string;
+  alt?: string;
+  className?: string;
+  priority?: boolean;
+};
 
 const ParallaxImage = (props: ParallaxImageProps) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -42,13 +46,12 @@ const ParallaxImage = (props: ParallaxImageProps) => {
       ref={containerRef}
       className="image_container h-50vh lg:h-[90vh] overflow-hidden lg:overflow-clip relative"
     >
-      <div ref={ref} className="lg:scale-[1.25]">
-        <Image
+      <div ref={ref} className="">
+        <img
           {...props}
-          alt={props.alt}
-          width={1680}
-          height={800}
-          // className="object-[0px,-50px]"
+          src={props.src}
+          className={`object-cover w-full h-full ${props.className}`}
+          alt={props.alt ?? ""}
         />
         <div
           style={{ backgroundSize: "150px 150px" }}

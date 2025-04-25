@@ -4,10 +4,6 @@ import { useLayoutEffect, useRef } from "react";
 
 const NameSection = () => {
 
-  const downloadResumeinAnotherTab = () => {
-
-  };
-
   const containerRef = useRef<HTMLDivElement>(null);
 
   
@@ -29,7 +25,7 @@ const NameSection = () => {
   return (
     <div
       ref={containerRef}
-      className="bg-off-white text-black py-10 md:py-20  px-6 lg:px-16"
+      className="bg-off-white text-black py-16 md:py-20 px-6 lg:px-16"
     >
       <div className="mb-6 text-[2.5rem] md:text-[4rem] lg:text-[8rem] tracking-[-2px] lg:tracking-[-5px] leading-none font-semibold">
         <h1 id="header-text" className="overflow-hidden pb-[10px]">
