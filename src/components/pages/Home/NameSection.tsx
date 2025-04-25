@@ -43,7 +43,7 @@ const NameSection = () => {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://docs.google.com/document/d/14jJ2ZUeM5IyS3Uk3VdPng-SATn3aAXWxRhmb-uEdzK8/edit"
+          href="https://docs.google.com/document/d/1zV2RDlZF85oTo-PIbuQZQfr0uOpN51yc"
           className="hidden md:flex items-center gap-2 cursor-pointer ml-auto"
         >
           Resume
