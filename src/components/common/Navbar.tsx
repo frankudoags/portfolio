@@ -53,10 +53,10 @@ const Menu = () => (
 
 const links = [
     { name: "home", href: "/" },
-    { name: "work", href: "/work" },
-    { name: "about", href: "/about" },
-    { name: "blog", href: "/blog" },
-    { name: "contact", href: "/contact" },
+    { name: "work", href: "/" },
+    { name: "about", href: "/" },
+    { name: "blog", href: "/" },
+    { name: "contact", href: "/" },
 ]
 
 const MenuItem = ({ name, href }: { name: string; href: string }) => (

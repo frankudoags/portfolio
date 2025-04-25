@@ -5,8 +5,8 @@ import { GlobeIcon } from "lucide-react";
 
 const works = [
   {
-    title: "Hydra",
-    description: "Hydra EMR, an electronic medical record platform that integrates workflows for healthcare practices",
+    title: "Hydra EMR",
+    description: "Hydra EMR is an electronic medical record platform that integrates workflows for healthcare practices",
     workType: "Frontend",
     image: "/projects/hydra.png",
     year: "2023",
@@ -26,7 +26,7 @@ const works = [
     textColor: "#003366",
     buttonColor: "#0066CC",
     buttonTextColor: "#FFFFFF",
-    link: "https://konga.com",
+    link: "https://staging-kss.konga.com/",
   },
   {
     title: "Portfolio",
@@ -38,22 +38,11 @@ const works = [
     textColor: "#1A4731",
     buttonColor: "#38A169",
     buttonTextColor: "#FFFFFF",
-  },
-  {
-    title: "ULES Awards",
-    description: "Award voting site for Faculty of Engineering, University of Lagos",
-    workType: "Frontend",
-    image: "/projects/ules-awards.png",
-    link: "https://frankudoags.vercel.app/",
-    year: "2023",
-    bgColor: "#FFF5F5",
-    textColor: "#742A2A",
-    buttonColor: "#E53E3E",
-    buttonTextColor: "#FFFFFF",
+    githubLink: "https://github.com/frankudoags/portfolio",
   },
   {
     title: "Harmony",
-    description: "Harmony Tool is a web-based tool for visualizing and analyzing large-scale harmony blockchain data. It is designed to be a general-purpose tool for data exploration and analysis, and is not limited to any particular domain. Harmony is built on top of the Harmony Explorer API , which provides a standard interface for accessing and fetching blockchain data about users and transactions from the Harmony blockchain.",
+    description: "Harmony Tool is a web-based tool for visualizing and analyzing large-scale harmony blockchain data. Finalist project for Encode Club x Harmony Hackathon.",
     workType: "Frontend",
     image: "/projects/harmony.png",
     year: "2023",
@@ -66,7 +55,7 @@ const works = [
   },
   {
     title: "Daovation",
-    description: "A platform for creating and managing DAOs",
+    description: "Daovation is a cross-chain crowdfunding DAO, for decentralized charity and project/campaign funding. Axelar bounty winner(BNB Global Zero 2 Hero Hackathon)",
     workType: "Frontend",
     image: "/projects/daovation.png",
     year: "2023",
@@ -74,6 +63,8 @@ const works = [
     textColor: "#7B341E",
     buttonColor: "#DD6B20",
     buttonTextColor: "#FFFFFF",
+    link: "https://daovation.vercel.app/",
+    githubLink: "https://github.com/degencodebeast/daovation-frontend"
   },
 ];
 
